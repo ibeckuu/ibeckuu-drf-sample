@@ -74,21 +74,22 @@
               <b-input type="text" class="form-control" v-model="form.book.title" />
             </div>
           </div>
-          <div class=row form-group">
+          <div class="row form-group">
             <label class="col-sm-3 col-form-label">価格</label>
             <div class="col-sm-8">
               <b-input type="text" class="form-control" v-model="form.book.price" />
             </div>
-            <div class="row text-center mt-5">
-              <div class="col-sm-12">
-                <b-button type="submit" variant="primary">
-                  ${ isCreated ? '更新' : '登録' }
-                </b-button>
-              </div>                  
-            </div>
-          </b-form>
-        </main>
-      </div>
+          </div>
+          <div class="row text-center mt-5">
+            <div class="col-sm-12">
+              <b-button type="submit" variant="primary">
+                ${ isCreated ? '更新' : '登録' }
+              </b-button>
+            </div>                  
+          </div>
+        </b-form>
+      </main>
+    </div>
 
       <!-- デバッグ -->
       <div class="m-5">
@@ -187,7 +188,7 @@
               });
             },
             // メッセージをクリア
-            clearMessage: function(){
+            clearMessages: function(){
               this.message.error = "";
               this.message.warnings = [];
               this.message.info = "";
